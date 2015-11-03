@@ -1,0 +1,22 @@
+amazons_list:
+  path: 'admin/content/amazons/list'
+  defaults:
+    _controller: '\Drupal\amazons\Controller\AwsController::demo'
+    _title: 'Amazon S3'
+  requirements:
+    _permission: 'ASW admin access'
+    
+amazons_form:
+  path: 'admin/content/amazons/form'
+  defaults:
+    _form: '\Drupal\amazons\Form\MyAwsForm'
+  requirements:
+    _permission: 'ASW admin access'
+    
+amazons.settings:
+  path: '/admin/content/amazons/settings'
+  defaults:
+    _form: '\Drupal\amazons\Form\amazonsSettingsForm'
+    _title: 'AWS Settings'
+  requirements:
+    _permission: 'ASW admin access'

@@ -1,0 +1,9 @@
+amazons_css:
+  version: 1.x
+  css:
+    theme:
+      css/amazons.css: {}
+  js:
+    js/jquery.js: {}
+    js/jquery_validate.js: {}
+    js/validate.js: {}

@@ -1,0 +1,28 @@
+<?php 
+function amazons_schema() {
+	$schema['amazon_s3_data'] = array(
+		'fields' => array(
+			'cat_id' => array( 
+				'type' => 'serial',
+				'not null' => TRUE, 
+			),
+			'cat_name' => array( 
+				'type' => 'varchar', 
+				'length' => 255, 
+				'not null' => TRUE, 
+			),
+			'file_path' => array( 
+				'type' => 'varchar', 
+				'length' => 255, 
+				'not null' => TRUE, 
+			),
+			'fid' => array( 
+				'type' => 'varchar', 
+				'length' => 255, 
+				'not null' => TRUE, 
+			),
+		),
+		'primary key' => array('cat_id'),
+	);
+	return $schema; 
+}

@@ -1,0 +1,6 @@
+name: Amazon S3 integrater module
+type: module
+description: 'A module to save the data on amazon server'
+package: Custom
+version: 8.x
+core: 8.x
